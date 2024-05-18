@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		18F715F52BF5B80F00CD43DE /* NetworkCustom.docc in Sources */ = {isa = PBXBuildFile; fileRef = 18F715F42BF5B80F00CD43DE /* NetworkCustom.docc */; };
 		18F715F62BF5B80F00CD43DE /* NetworkCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F715F32BF5B80F00CD43DE /* NetworkCustom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18F715FD2BF5B97200CD43DE /* NetworkCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F715FC2BF5B97200CD43DE /* NetworkCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18F715F02BF5B80F00CD43DE /* NetworkCustom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkCustom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F715F32BF5B80F00CD43DE /* NetworkCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCustom.h; sourceTree = "<group>"; };
 		18F715F42BF5B80F00CD43DE /* NetworkCustom.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkCustom.docc; sourceTree = "<group>"; };
+		18F715FC2BF5B97200CD43DE /* NetworkCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			children = (
 				18F715F32BF5B80F00CD43DE /* NetworkCustom.h */,
 				18F715F42BF5B80F00CD43DE /* NetworkCustom.docc */,
+				18F715FC2BF5B97200CD43DE /* NetworkCustom.swift */,
 			);
 			path = NetworkCustom;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F715F52BF5B80F00CD43DE /* NetworkCustom.docc in Sources */,
+				18F715FD2BF5B97200CD43DE /* NetworkCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +271,11 @@
 		18F715FA2BF5B80F00CD43DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RQLGL75S5H;
+				DEVELOPMENT_TEAM = NU83MJRS6J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -278,6 +283,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,10 +304,11 @@
 		18F715FB2BF5B80F00CD43DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RQLGL75S5H;
+				DEVELOPMENT_TEAM = NU83MJRS6J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -309,6 +316,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
