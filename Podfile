@@ -4,7 +4,6 @@
 target 'MovieApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'SDWebImage'
 pod 'NetworkCustomSDK','1.0.2'
 
 end

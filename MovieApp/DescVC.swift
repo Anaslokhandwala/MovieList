@@ -30,10 +30,26 @@ class DescVC: UIViewController {
         setupCircularProgressView()
         
         let imageUrl = "https://image.tmdb.org/t/p/w220_and_h330_face\(poster_path)"
-        posterImageV.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "placeholder.png"))
-        
+        if let url = URL(string: imageUrl) {
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let data = data {
+                    DispatchQueue.main.async {
+                        self.posterImageV.image = UIImage(data: data)
+                    }
+                }
+            }.resume()
+        }
         let backURL = "https://image.tmdb.org/t/p/w220_and_h330_face\(backdropImage)"
-        backIV.sd_setImage(with: URL(string: backURL), placeholderImage: UIImage(named: "placeholder.png"))
+
+        if let url = URL(string: backURL) {
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let data = data {
+                    DispatchQueue.main.async {
+                        self.backIV.image = UIImage(data: data)
+                    }
+                }
+            }.resume()
+        }
         
         titleLbl.text = original_title
         overviewLbl.text = overview

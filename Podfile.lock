@@ -1,18 +1,16 @@
 PODS:
-  - SDWebImage (5.19.2):
-    - SDWebImage/Core (= 5.19.2)
-  - SDWebImage/Core (5.19.2)
+  - NetworkCustomSDK (1.0.2)
 
 DEPENDENCIES:
-  - SDWebImage
+  - NetworkCustomSDK (= 1.0.2)
 
 SPEC REPOS:
   trunk:
-    - SDWebImage
+    - NetworkCustomSDK
 
 SPEC CHECKSUMS:
-  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+  NetworkCustomSDK: c775be49737ff9e65c28d4891d34093db356fab4
 
-PODFILE CHECKSUM: 23ed76238a188eb66af40c4dd6c60db8e19aa743
+PODFILE CHECKSUM: cabad309686333e37aa96a758ec876ff6761654d
 
 COCOAPODS: 1.15.2

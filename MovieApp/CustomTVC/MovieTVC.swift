@@ -1,5 +1,4 @@
 import UIKit
-import SDWebImage
 
 class MovieTVC: UITableViewCell {
 
@@ -51,8 +50,17 @@ class MovieTVC: UITableViewCell {
         }
         
         if let posterPath = movie["poster_path"] as? String {
-            let imageUrl = "https://image.tmdb.org/t/p/w220_and_h330_face\(posterPath)"
-            imageMovie.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "placeholder.png"))
+        let imageUrl = "https://image.tmdb.org/t/p/w220_and_h330_face\(posterPath)"
+
+        if let url = URL(string: imageUrl) {
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let data = data {
+                    DispatchQueue.main.async {
+                        self.imageMovie.image = UIImage(data: data)
+                    }
+                }
+            }.resume()
+        }
         } else {
             imageMovie.image = UIImage(named: "placeholder.png")
         }

@@ -1,0 +1,11 @@
+framework module NetworkCustom {
+  umbrella header "NetworkCustom.h"
+  export *
+
+  module * { export * }
+}
+
+module NetworkCustom.Swift {
+  header "NetworkCustom-Swift.h"
+  requires objc
+}

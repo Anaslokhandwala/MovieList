@@ -1,0 +1,374 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkCustom",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkCustomCalling",
+        "printedName": "NetworkCustomCalling",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkCustomCalling",
+                "printedName": "NetworkCustom.NetworkCustomCalling",
+                "usr": "s:13NetworkCustom0aB7CallingC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13NetworkCustom0aB7CallingCACycfc",
+            "mangledName": "$s13NetworkCustom0aB7CallingCACycfc",
+            "moduleName": "NetworkCustom",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkEndpoint",
+                "printedName": "NetworkCustom.NetworkEndpoint",
+                "usr": "s:13NetworkCustom0A8EndpointO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13NetworkCustom0aB7CallingC7request8endpoint10completionyAA0A8EndpointO_ys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "mangledName": "$s13NetworkCustom0aB7CallingC7request8endpoint10completionyAA0A8EndpointO_ys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "moduleName": "NetworkCustom",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13NetworkCustom0aB7CallingC",
+        "mangledName": "$s13NetworkCustom0aB7CallingC",
+        "moduleName": "NetworkCustom",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkEndpoint",
+        "printedName": "NetworkEndpoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "custom",
+            "printedName": "custom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkCustom.NetworkEndpoint.Type) -> (Foundation.URL, Swift.String, [Swift.String : Swift.String]?, [Swift.String : Any]?, Foundation.Data?) -> NetworkCustom.NetworkEndpoint",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.URL, Swift.String, [Swift.String : Swift.String]?, [Swift.String : Any]?, Foundation.Data?) -> NetworkCustom.NetworkEndpoint",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkEndpoint",
+                        "printedName": "NetworkCustom.NetworkEndpoint",
+                        "usr": "s:13NetworkCustom0A8EndpointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(url: Foundation.URL, method: Swift.String, headers: [Swift.String : Swift.String]?, queryItems: [Swift.String : Any]?, body: Foundation.Data?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Swift.String]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkCustom.NetworkEndpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkEndpoint",
+                        "printedName": "NetworkCustom.NetworkEndpoint",
+                        "usr": "s:13NetworkCustom0A8EndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13NetworkCustom0A8EndpointO6customyAC10Foundation3URLV_SSSDyS2SGSgSDySSypGSgAE4DataVSgtcACmF",
+            "mangledName": "$s13NetworkCustom0A8EndpointO6customyAC10Foundation3URLV_SSSDyS2SGSgSDySSypGSgAE4DataVSgtcACmF",
+            "moduleName": "NetworkCustom"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13NetworkCustom0A8EndpointO",
+        "mangledName": "$s13NetworkCustom0A8EndpointO",
+        "moduleName": "NetworkCustom",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 633,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 697,
+      "length": 17,
+      "value": "\"?\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 713,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 828,
+      "length": 30,
+      "value": "\"com.example.CustomNetworkSDK\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "IntegerLiteral",
+      "offset": 866,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 908,
+      "length": 13,
+      "value": "\"Invalid URL\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1124,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 1213,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 1618,
+      "length": 30,
+      "value": "\"com.example.CustomNetworkSDK\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1656,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "StringLiteral",
+      "offset": 1698,
+      "length": 9,
+      "value": "\"No data\""
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "Dictionary",
+      "offset": 2421,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/croma\/Desktop\/Update\/NetworkCustom\/NetworkCustom\/NetworkCustom.swift",
+      "kind": "Dictionary",
+      "offset": 2587,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}
