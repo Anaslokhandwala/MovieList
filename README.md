@@ -7,7 +7,7 @@ Add the following pod in your pod file
 
 ## Setup
 
-###Call the Network endpoint.**
+### Call the Network endpoint.
 ```
 let customEndpoint = NetworkEndpoint.custom(url: customURL, method: "GET", headers: customHeaders, queryItems: customQueryItems, body: nil)
 ```
